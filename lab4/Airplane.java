@@ -1,7 +1,7 @@
 import java.util.Comparator;
 
 public class Airplane {
-    public String Name;
+    private String Name;
     private String Type; 
     private int Weight; 
     private int AmountOfEngines;

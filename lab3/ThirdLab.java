@@ -15,11 +15,13 @@ public class ThirdLab {
         String[] words = textBuilder.toString().split("\\s+"); // Розподіл тексту на масив
         textBuilder.setLength(0);  
         for(String word : words) {
-            if(word.charAt(word.length()-1) == '.' || word.charAt(word.length()-1) == '!' || word.charAt(word.length()-1) == '?') {
-                if(word.length() - 1 == length) {
-                    textBuilder.append(replace + ". "); 
-                }
-            } else if (word.length() == length) {           // Перевірка довжини кожного слова та їх заміна
+            if(word.charAt(word.length()-1) == '.' && word.length() - 1 == length) {
+                textBuilder.append(replace + ". "); 
+            } else if (word.charAt(word.length() - 1) == '!' && word.length() - 1 == length) {
+                textBuilder.append(replace + "! ");
+            } else if (word.charAt(word.length() - 1) == '?' && word.length() - 1 == length) { // Перевірка довжини кожного слова та їх заміна
+                textBuilder.append(replace + "? ");
+            } else if (word.length() == length) {          
                 textBuilder.append(replace + " "); 
             } else {
                 textBuilder.append(word + " ");

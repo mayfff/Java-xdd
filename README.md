@@ -1,1 +1,1 @@
-# Java-xdd
+# laboratory work on Java

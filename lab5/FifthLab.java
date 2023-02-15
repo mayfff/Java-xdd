@@ -29,8 +29,6 @@ public class FifthLab {
         scn.close();
 
     }
-
-  
 }
 
 class Sentences {

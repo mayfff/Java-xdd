@@ -136,7 +136,7 @@ class Plackart extends Train {
 
 class SortByComfort implements Comparator<Train> {
     
-    public int compare(Train a, Train b){
+    public int compare(Train a, Train b) {
         return a.getComfortLevel() - b.getComfortLevel();
     }
 }

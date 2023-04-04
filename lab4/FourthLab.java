@@ -12,14 +12,14 @@ public class FourthLab {
         Airplane[] planes = {plane1, plane2, plane3, plane4, plane5};
 
         System.out.println("List of planes: ");
-        for(Airplane plane : planes) {
+        for (Airplane plane : planes) {
             System.out.println(plane);
         }
         System.out.println();
 
         Arrays.sort(planes, new SortByPrice());
         System.out.println("Sorted by price: ");  
-        for(Airplane plane : planes) {
+        for (Airplane plane : planes) {
             System.out.println(plane);
         }
         System.out.println();
@@ -27,7 +27,7 @@ public class FourthLab {
 
         Arrays.sort(planes, new SortByYear());
         System.out.println("Sorted by year: ");
-        for(Airplane plane : planes) {
+        for (Airplane plane : planes) {
             System.out.println(plane);
         }
         System.out.println(planes.length);
